@@ -1,21 +1,21 @@
 name: Test
 
-on: push
+ on: push
 
-jobs:
-  ubuntu:
+ jobs:
+   ubuntu:
     runs-on: ubuntu-latest
     steps:
     - run: date
-  windows:
+   windows:
     runs-on: windows-latest
     steps:
     - run: date
-  macos:
+   macos:
     runs-on: macos-latst
     steps:
     - run: date
-  depend:
+   depend:
     needs: {ubuntu, windows,macos}
     runs-on: macos-latst
     steps:
