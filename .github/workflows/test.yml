@@ -15,8 +15,3 @@ jobs:
      runs-on: macos-latst
      steps:
      - run: date
-    depend:
-     needs: {ubuntu, windows,macos}
-     runs-on: macos-latst
-     steps:
-     - run: date
